@@ -9,6 +9,8 @@
     <message name="sumaResponse"/>
     <message name="factorial"/>
     <message name="factorialResponse"/>
+    <message name="palindromo"/>
+    <message name="palindromoResponse"/>
     <portType name="Operaciones">
         <operation name="suma">
             <input message="tns:suma"/>
@@ -18,6 +20,10 @@
             <input message="tns:factorial"/>
             <output message="tns:factorialResponse"/>
         </operation>
+        <operation name="palindromo">
+            <input message="tns:palindromo"/>
+            <output message="tns:palindromoResponse"/>
+        </operation>
     </portType>
     <binding name="OperacionesPortBinding" type="tns:Operaciones">
         <wsp:PolicyReference URI="#OperacionesPortBindingPolicy"/>
@@ -26,6 +32,10 @@
             <output/>
         </operation>
         <operation name="factorial">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="palindromo">
             <input/>
             <output/>
         </operation>

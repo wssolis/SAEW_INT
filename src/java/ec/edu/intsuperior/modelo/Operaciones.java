@@ -38,5 +38,14 @@ public class Operaciones {
         }
         return acu;
     }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "palindromo")
+    public String palindromo(@WebParam(name = "parameter") String parameter) {
+        //TODO write your implementation code here:
+        return "palindromo";
+    }
     
 }
